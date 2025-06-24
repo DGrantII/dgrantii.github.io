@@ -13,10 +13,19 @@
     <script src="https://kit.fontawesome.com/4fe5db8fea.js" crossorigin="anonymous"></script>
     <title>Devin Grant II</title>
     <style>
-        .temp1 {
-            background-color: hsl(220, 100%, 75%);
+        :root {
+            --myBlue: #8EB4FF;
+            --accentBlue: #C7DEFF;
         }
-
+        .temp1 {
+            background-color: var(--myBlue);
+        }
+        .card-header-color {
+            background-color: var(--myBlue);
+        }
+        .card-body-color {
+            background-color: var(--accentBlue);
+        }
         .portlink {
             color: white;
             text-decoration: none;
@@ -42,7 +51,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-5 rounded-start-5 ps-5 pt-5 pb-3 temp1">
+            <div class="col-12 col-lg-5 rounded-5 mt-3 ps-5 pt-5 pb-3 temp1">
                 <h2>About Me</h2>
                 <p class="ps-1 pe-5 fw-medium">
                     Hard-working and motivated individual eager
@@ -58,10 +67,21 @@
                 <a class="btn btn-dark text-white mt-5" href="./extras/resume.pdf">Resume</a>
             </div>
         </div>
-        <div class="row mt-3 pb-3 justify-content-center bg-light">
+        <div class="row mt-3 bg-light">
             <h3 class="text-center my-3">Some projects I have worked on</h3>
-            <div class="col-auto">
-                <a class="btn btn-primary" href="https://dgrantii.github.io/shootin-shots/">Shootin' Shots</a>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 pb-3 text-center justify-content-center bg-light">
+            <div class="col">
+                <div class="card temp2 shadow">
+                    <h4 class="card-header card-header-color">Shootin' Shots Photography</h4>
+                    <div class="card-body card-body-color">
+                        <p class="card-text">
+                            A small business launch website created with vanilla HTML,
+                            CSS, and JavaScript.
+                        </p>
+                        <a href="https://dgrantii.github.io/shootin-shots/" class="btn btn-primary">Visit site</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row align-items-center text-white" style="height: 100px;">
